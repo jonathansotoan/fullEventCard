@@ -1,0 +1,4 @@
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Datos\bin\Debug\apps.FullEventCard.Datos.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Datos\bin\Debug\apps.FullEventCard.Datos.pdb
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Datos\obj\Debug\apps.FullEventCard.Datos.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Datos\obj\Debug\apps.FullEventCard.Datos.pdb

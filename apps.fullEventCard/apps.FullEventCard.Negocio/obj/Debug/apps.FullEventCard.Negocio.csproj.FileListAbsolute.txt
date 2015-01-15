@@ -1,0 +1,7 @@
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Negocio\bin\Debug\apps.FullEventCard.Negocio.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Negocio\bin\Debug\apps.FullEventCard.Negocio.pdb
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Negocio\bin\Debug\apps.FullEventCard.Datos.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Negocio\bin\Debug\apps.FullEventCard.Datos.pdb
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Negocio\obj\Debug\apps.FullEventCard.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Negocio\obj\Debug\apps.FullEventCard.Negocio.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.FullEventCard.Negocio\obj\Debug\apps.FullEventCard.Negocio.pdb

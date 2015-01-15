@@ -1,0 +1,11 @@
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\bin\apps.fullEventCard.dll.config
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\bin\apps.fullEventCard.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\bin\apps.fullEventCard.pdb
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\obj\Debug\apps.fullEventCard.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\obj\Debug\apps.fullEventCard.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\obj\Debug\apps.fullEventCard.pdb
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\bin\apps.FullEventCard.Negocio.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\bin\zxing.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\bin\apps.FullEventCard.Datos.dll
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\bin\apps.FullEventCard.Negocio.pdb
+C:\Users\usuario\Desktop\fullEventCard\apps.fullEventCard\apps.fullEventCard\bin\apps.FullEventCard.Datos.pdb

@@ -1,0 +1,484 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Inicio.master.cs" Inherits="apps.fullEventCard.Inicio" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link href="Include/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="Include/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="Include/main.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="Include/FontAwesome/css/font-awesome.css" rel="stylesheet"/>
+	<!--[if lte IE 9]>
+			<link href="assets/css/main-ie.min.css" rel="stylesheet" type="text/css" media="screen" />
+			<link href="assets/css/main-ie-part2.min.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+
+	<!-- CSS for demo style switcher. you can remove this -->
+	<link href="Include/style-switcher.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+   
+<body>     
+        
+    <!-- WRAPPER -->
+	<div class="wrapper">
+
+		<!-- TOP BAR -->
+		<div class="top-bar">
+			<div class="container">
+				<div class="row">
+					<!-- logo -->
+					<div class="col-md-2 logo">
+						<a href="#">
+							<img src="Img/logo.png" alt="Full Event" style="background-color: white; height: 60px; margin-top: -10px; margin-bottom: 4px;" />
+						</a>
+					</div>
+					<!-- end logo -->
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-3">
+								<!-- search box -->
+								<div id="tour-searchbox" class="input-group searchbox">
+									<input type="search" class="form-control" placeholder="Ingresa un evento, organizador o palabra clave...">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+									</span>
+								</div>
+								<!-- end search box -->
+							</div>
+							<div class="col-md-9">
+								<div class="top-bar-right">
+									<!-- responsive menu bar icon -->
+									<a href="#" class="hidden-md hidden-lg main-nav-toggle"><i class="fa fa-bars"></i></a>
+									<!-- end responsive menu bar icon -->
+									<button type="button" id="start-tour" class="btn btn-link"><i class="fa fa-refresh"></i> Empezar recorrido</button>
+									<button type="button" id="global-volume" class="btn btn-link btn-global-volume"><i class="fa fa-volume-up"></i></button>
+									<div class="notifications">
+										<ul>
+											<!-- notification: inbox -->
+											<li class="notification-item inbox">
+												<div class="btn-group">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+														<i class="fa fa-envelope"></i>
+														<span class="count">2</span>
+														<span class="circle"></span>
+													</a>
+
+													<ul class="dropdown-menu" role="menu">
+														<li class="notification-header">
+															<em>Tienes 2 mensajes sin leer</em>
+														</li>
+														<li class="inbox-item clearfix">
+															<a href="#">
+																<div class="media">
+																	<div class="pull-left">
+																		<img class="media-object" src="Img/juez/rafael-alvarez.jpg" alt="Rafael">
+																	</div>
+																	<div class="media-body">
+																		<h5 class="media-heading name">Rafael Alvarez</h5>
+																		<p class="text">¡Anoche estuviste estupenda!</p>
+																		<span class="timestamp">Hace 4 minutos</span>
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li class="inbox-item unread clearfix">
+															<a href="#">
+																<div class="media">
+																	<div class="pull-left">
+																		<img class="media-object" src="Img/juez/jose-david.jpg" alt="Jos&eacute;">
+																	</div>
+																	<div class="media-body">
+																		<h5 class="media-heading name">Jos&eacute; Ospina</h5>
+																		<p class="text">Hey Manu, grandiosa m&uacute;sica!</p>
+																		<span class="timestamp">Hace 2 horas</span>
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li class="inbox-item unread clearfix">
+															<a href="#">
+																<div class="media">
+																	<div class="pull-left">
+																		<img class="media-object" src="Img/juez/claudia-sofia.jpg" alt="Claudia">
+																	</div>
+																	<div class="media-body">
+																		<h5 class="media-heading name">Claudia V&eacute;lez</h5>
+																		<p class="text">Ok, el pr&oacute;ximo s&aacute;bado estar&eacute; all&iacute;</p>
+																		<span class="timestamp">Oct 6</span>
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li class="inbox-item clearfix">
+															<a href="#">
+																<div class="media">
+																	<div class="pull-left">
+																		<img class="media-object" src="Img/juez/diego-mazo.jpg" alt="Diego">
+																	</div>
+																	<div class="media-body">
+																		<h5 class="media-heading name">Diego Mazo</h5>
+																		<p class="text"><i class="fa fa-reply"></i> Por favor revisa la fecha del e...</p>
+																		<span class="timestamp">Oct 2</span>
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li class="inbox-item clearfix">
+															<a href="#">
+																<div class="media">
+																	<div class="pull-left">
+																		<img class="media-object" src="Img/juez/leonardo-arango.jpg" alt="Leonardo">
+																	</div>
+																	<div class="media-body">
+																		<h5 class="media-heading name">Leonardo Arango</h5>
+																		<p class="text"><i class="fa fa-reply"></i> No hay problema</p>
+																		<span class="timestamp">Sep 12</span>
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li class="notification-footer">
+															<a href="#">View All Messages</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<!-- end notification: inbox -->
+
+											<!-- notification: general -->
+											<li class="notification-item general">
+												<div class="btn-group">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+														<i class="fa fa-bell"></i>
+														<span class="count">8</span>
+														<span class="circle"></span>
+													</a>
+													<ul class="dropdown-menu" role="menu">
+														<li class="notification-header">
+															<em>Tienes 8 notificaciones</em>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-comment green-font"></i>
+																<span class="text">Nuevo evento en la categor&iacute;a <em>English speaking</em> creado</span>
+																<span class="timestamp">Hace 1 minuto</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-user green-font"></i>
+																<span class="text">Nuevo evento en la categor&iacute;a <em>Pop</em> creado</span>
+																<span class="timestamp">Hace 12 minutos</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-comment green-font"></i>
+																<span class="text">Nuevo comentario en el evento <em>Cantores de chipuco</em></span>
+																<span class="timestamp">Hace 18 minutos</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-shopping-cart red-font"></i>
+																<span class="text">Tienes 4 eventos pendientes para pagar</span>
+																<span class="timestamp">Hace 8 horas</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-edit yellow-font"></i>
+																<span class="text">3 eventos sin publicar</span>
+																<span class="timestamp">Hace 1 d&iacute;a</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-comment green-font"></i>
+																<span class="text">Nuevo comentario en el evento <em>Fiesta navide&ntilde;a 2014</em></span>
+																<span class="timestamp">Hace 3 d&iacute;as</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-comment green-font"></i>
+																<span class="text">Nuevo comentario en el evento <em>Fiesta navide&ntilde;a</em></span>
+																<span class="timestamp">Oct 15</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-warning yellow-font"></i>
+																<span class="text red-font">Tu pr&oacute;ximo evento es en 23 minutos</span>
+																<span class="timestamp">Oct 11</span>
+															</a>
+														</li>
+														<li class="notification-footer">
+															<a href="#">View All Notifications</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<!-- end notification: general -->
+										</ul>
+									</div>
+
+									<!-- logged user and the menu -->
+									<div class="logged-user">
+										<div class="btn-group">
+											<a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+												<img src="Include/user-avatar.png" alt="User Avatar">
+                                            <asp:Label ID="lblNombre" runat="server"></asp:Label>
+												<span class="caret"></span>
+											</a>
+											<ul class="dropdown-menu" role="menu">
+												<li>
+													<a href="#">
+														<i class="fa fa-user"></i>
+														<span class="text">Perfil</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-cog"></i>
+														<span class="text">Configuraci&oacute;n</span>
+													</a>
+												</li>
+												<li>
+													<a href="Logout.aspx">
+														<i class="fa fa-power-off"></i>
+														<span class="text">Cerrar sesi&oacute;n</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- end logged user and the menu -->
+								</div>
+								<!-- /top-bar-right -->
+							</div>
+						</div>
+						<!-- /row -->
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /top -->
+
+		<!-- BOTTOM: LEFT NAV AND RIGHT MAIN CONTENT -->
+		<div class="bottom">
+			<div class="container">
+				<div class="row">
+					<!-- left sidebar -->
+					<div class="col-md-2 left-sidebar">
+
+						<!-- main-nav -->
+						<nav class="main-nav">
+
+							<ul class="main-menu">
+								<li class="active">
+									<a href="#"><i class="fa fa-dashboard fa-fw"></i>
+										<span class="text">Dashboard</span>
+									</a>
+								</li> 
+								<li>
+									<a href="#" class="js-sub-menu-toggle"><i class="fa fa-clipboard fa-fw"></i>
+										<span class="text">Eventos</span>
+										<i class="toggle-icon fa fa-angle-left"></i>
+									</a>
+									<ul class="sub-menu ">
+										<li>
+											<a href="listaeventos.aspx">
+												<span class="text">Catálogo</span>
+											</a>
+										</li>
+										<li>
+											<a href="Eventosinscritos.aspx">
+												<span class="text">Asistiré</span>
+											</a>
+										</li>
+                                        <li>
+											<a href="QRMovil.aspx">
+												<span class="text">Mi Codigo</span>
+											</a>
+										</li>
+										
+							</ul>
+						</nav>
+						<!-- /main-nav -->
+
+						<div class="sidebar-minified js-toggle-minified">
+							<i class="fa fa-angle-left"></i>
+						</div>
+
+						<!-- sidebar content -->
+						<div class="sidebar-content">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h5><i class="fa fa-lightbulb-o"></i> Tips</h5>
+								</div>
+								<div class="panel-body">
+									<p>Usted puede acceder a los eventos fácilmente en el panel de eventos, enterate como hacerlo ingresando al link.</p>
+								</div>
+							</div>
+
+							<h5 class="label label-default"><i class="fa fa-info-circle"></i> Tendencias</h5>
+							<ul class="list-unstyled list-info-sidebar bottom-30px">
+								<li class="data-row">
+									<div class="data-name">Asistentes toque Dj Xym</div>
+									<div class="data-value">
+										14 / 160
+										<div class="progress progress-xs">
+											<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+												<span class="sr-only">10%</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="data-row">
+									<div class="data-name">Asistentes a concierto de cantores de chipuco</div>
+									<div class="data-value">
+										232 / 500
+										<div class="progress progress-xs">
+											<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" style="width: 46%">
+												<span class="sr-only">46%</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="data-row">
+									<span class="data-name">N&uacute;mero de asistencias registradas</span>
+									<span class="data-value">45.032</span>
+								</li>
+								<li class="data-row">
+									<span class="data-name">Eventos de rock</span>
+									<span class="data-value">845</span>
+								</li>
+								<li class="data-row">
+									<span class="data-name">Cumplea&ntilde;os</span>
+									<span class="data-value">145</span>
+								</li>
+								<li class="data-row">
+									<span class="data-name">Eventos cancelados</span>
+									<span class="data-value">128</span>
+								</li>
+							</ul>
+						</div>
+						<!-- end sidebar content -->
+					</div>
+					<!-- end left sidebar -->
+
+					<!-- top general alert -->
+					<div class="alert alert-danger top-general-alert">
+						<span>If you
+							<strong>can't see the logo</strong> on the top left, please reset the style on right style switcher (for upgraded theme only).</span>
+						<button type="button" class="close">×</button>
+					</div>
+					<!-- end top general alert -->
+
+					<!-- content-wrapper -->
+					<div class="col-md-10 content-wrapper">
+						<div class="row">
+							<div class="col-md-4 ">
+								<ul class="breadcrumb">
+									<li><i class="fa fa-home"></i>
+										<a href="#">Home</a>
+									</li>
+									<li class="active">Dashboard</li>
+								</ul>
+							</div>
+							<div class="col-md-8 ">
+								<div class="top-content">
+									<ul class="list-inline mini-stat">
+										<li>
+											<h5>Eventos
+												<span class="stat-value stat-color-orange"><i class="fa fa-plus-circle"></i> 81,450</span>
+											</h5>
+											<span id="mini-bar-chart1" class="mini-bar-chart"><canvas width="53" height="25" style="display: inline-block; vertical-align: top; width: 53px; height: 25px;"></canvas></span>
+										</li>
+										<li>
+											<h5>Registrados
+												<span class="stat-value stat-color-blue"><i class="fa fa-plus-circle"></i> 150,743</span>
+											</h5>
+											<span id="mini-bar-chart2" class="mini-bar-chart"><canvas width="53" height="25" style="display: inline-block; vertical-align: top; width: 53px; height: 25px;"></canvas></span>
+										</li>
+										<li>
+											<h5>Inscritos
+												<span class="stat-value stat-color-seagreen"><i class="fa fa-plus-circle"></i> 43,748</span>
+											</h5>
+											<span id="mini-bar-chart3" class="mini-bar-chart"><canvas width="53" height="25" style="display: inline-block; vertical-align: top; width: 53px; height: 25px;"></canvas></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- main -->
+						<div class="content">
+						    
+
+                            <!-- aqui va el content place holder -->
+                                <form id="form1" runat="server">
+                                <div>
+                                    <asp:Label runat="server" ID="lblNombres"></asp:Label>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                              </form>
+
+							</div>
+							<!-- /main-content -->
+						</div>
+						<!-- /main -->
+					</div>
+					<!-- /content-wrapper -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- END BOTTOM: LEFT NAV AND RIGHT MAIN CONTENT -->
+		<div class="push-sticky-footer"></div>
+	<!-- /wrapper -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		© 2014 The Develovers
+	</footer>
+	<!-- END FOOTER -->
+
+	
+	<script src="Include/jquery-2.1.0.min.js"></script>
+	<script src="Include/bootstrap.js"></script>
+	<script src="Include/modernizr.js"></script>
+	<script src="Include/bootstrap-tour.custom.js"></script>
+	<script src="Include/king-common.min.js"></script>
+	<script src="Include/deliswitch.js"></script>
+
+	<script src="Include/jquery.easypiechart.min.js"></script>
+	<script src="Include/raphael-2.1.0.min.js"></script>
+	<script src="Include/jquery.flot.min.js"></script>
+	<script src="Include/jquery.flot.resize.min.js"></script>
+	<script src="Include/jquery.flot.time.min.js"></script>
+	<script src="Include/jquery.flot.pie.min.js"></script>
+	<script src="Include/jquery.flot.tooltip.min.js"></script>
+	<script src="Include/jquery.sparkline.min.js"></script>
+	<script src="Include/jquery.dataTables.min.js"></script>
+	<script src="Include/dataTables.bootstrap.js"></script>
+	<script src="Include/jquery.mapael.js"></script>
+	<script src="Include/usa_states.js"></script>
+	<script src="Include/king-chart-stat.min.js"></script>
+	<script src="Include/king-table.min.js"></script>
+	<script src="Include/king-components.min.js"></script>
+
+    <div id="flotTip" style="position: absolute; z-index: 100; padding: 0.4em 0.6em; border-top-left-radius: 0.5em; border-top-right-radius: 0.5em; border-bottom-right-radius: 0.5em; border-bottom-left-radius: 0.5em; font-size: 0.8em; border: 1px solid rgb(17, 17, 17); display: none; white-space: nowrap; background: rgb(255, 255, 255);"></div>
+    </form>
+</body>
+</html>
